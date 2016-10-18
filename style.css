@@ -1,0 +1,37 @@
+/*these two rules provide the necessary functionality*/
+.fukol-grid {
+  display: flex; /* 1 */
+  flex-wrap: wrap; /* 2 */
+  margin: -0.5em; /* 5 (edit me!) */
+}
+
+.fukol-grid > * {
+  flex: 1 0 10em; /* 3 (edit me!) */
+  margin: 0.5em; /* 4 (edit me!) */
+}
+
+
+
+
+/*the remaining rules provide styling for this particular example*/
+* {
+  box-sizing: border-box; /* should be covered by reset */
+}
+
+body {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 100em;
+  line-height: 1.5;
+}
+
+body * + * {
+  margin-top: 3em;
+}
+
+.fukol-grid > * {
+  background: #111;
+  padding: 1em;
+  color: #fff;
+  text-align: center;
+}
